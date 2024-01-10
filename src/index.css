@@ -63,6 +63,12 @@ body {
   letter-spacing: 0.1em;
 }
 
+.work-header{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+
 .clearAll{
   clear: both;
 }

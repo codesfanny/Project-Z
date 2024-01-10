@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Main() {
     return (
         <div className="">
-            <div className="flex flex-row mt-[13%] justify-between relative">
+            <div className="flex flex-row mt-[5%] justify-between relative">
                 <div className="flex-col">
                     <div className="">
                         <div className="space-y-4 h-6 w-6 mb-32">

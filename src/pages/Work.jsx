@@ -5,13 +5,13 @@ import { HiHome } from 'react-icons/hi2'
 export default function Work() {
     return (
         <div className="">
-            <div className="flex flex-row mt-[13%] justify-between relative">
+            <div className="flex flex-row mt-[5%] justify-between">
                 <div className="flex-col">
                     <div className="">
-                        <div className="-ml-[20%] mb-32">
+                        <div className="-ml-[5%] mb-24">
                             <Link to="/">
                                 {' '}
-                                <HiHome fontSize={36} />
+                                <HiHome fontSize={32} />
                             </Link>
                         </div>
                         <div className=" ml-[23%] max-w-2 min-h-72 border-l border-l-gray-500"></div>
@@ -27,26 +27,49 @@ export default function Work() {
                     </div>
                 </div>
 
-                <div className="pl-[18%] pt-40 flex flex-col "></div>
-
-                <div className="z-50 min-w-72 ml-[30%] text-center mt-[5%]">
-                    <div className="flex justify-center">
-                        <div className="h-52 w-52 mb-[5%]">
-                            <img src="./images/profile-image.png" alt="" />
-                        </div>
+                <div className="max-h-[80%] max-w-[40%] flex flex-col justify-between">
+                    <div>
+                        <p className="header">Work</p>
                     </div>
-                    <div className="space-y-[10%]">
-                        <p className="xl:text-xl uppercase tracking-widest font-semibold"> Felix Fanny</p>
-                        <p>Front-end Web Developer, UI/UX Designer, Graphics Designer</p>
+                    <div className="text-sm space-y-4">
                         <p>
-                            Currently working full-time as a Web Developer at{' '}
-                            <button className="hover:line-through hover:decoration-1">Skyttechnology</button>{' '}
+                            Outlined on the right are my list of works. No thousands of work but I have put everything
+                            into the little so far and I am still moving.
+                        </p>
+                        <p>
+                            The world of digital design and development constantly evolves and so I keep pushing. I gain
+                            new skills every day because I never stop learning.
                         </p>
                     </div>
                 </div>
-                <div>
-                    <div className="absolute bg-[#efefef] h-[70%] w-[20%] flex -ml-[28%] -mt-[20%]"></div>
+
+                <div className="space-y-8">
+                    <div>
+                        <a href="#">
+                            <p className="work-header hover:line-through hover:decoration-2"> Project One </p>
+                            <p> - Front-end Development</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p className="work-header hover:line-through hover:decoration-2"> Project Two </p>
+                            <p> - UI/UX Designing</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p className="work-header hover:line-through hover:decoration-2"> Project Three </p>
+                            <p> - Front-end Development</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p className="work-header hover:line-through hover:decoration-2"> Project Four </p>
+                            <p> - Front-end Development</p>
+                        </a>
+                    </div>
                 </div>
+                <div className="clearAll"></div>
             </div>
         </div>
     )
