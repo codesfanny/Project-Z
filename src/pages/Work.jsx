@@ -6,27 +6,6 @@ export default function Work() {
     return (
         <div className="">
             <div className="flex flex-row mt-[5%] justify-between">
-                <div className="flex-col">
-                    <div className="">
-                        <div className="-ml-[5%] mb-24">
-                            <Link to="/">
-                                {' '}
-                                <HiHome fontSize={32} />
-                            </Link>
-                        </div>
-                        <div className=" ml-[23%] max-w-2 min-h-72 border-l border-l-gray-500"></div>
-
-                        <div className="semi-header w-[200%] mt-[60%] -ml-[80%] -rotate-90 float-start">
-                            {' '}
-                            <p> &copy; 2024 </p>{' '}
-                        </div>
-
-                        {/* <Link to="/work"> Go to Work</Link>
-            <Link to="/contact"> Go to Contact</Link>
-            <Link to="/about"> Go to About</Link> */}
-                    </div>
-                </div>
-
                 <div className="max-h-[80%] max-w-[40%] flex flex-col justify-between">
                     <div>
                         <p className="header">Work</p>
