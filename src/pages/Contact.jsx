@@ -14,20 +14,20 @@ export default function Contact() {
                 <p className="pb-4 contact-p">Need a beautiful well-structured solution?</p>
                 <p className="work-header">Get in Touch</p>
                 <p className="contact-p">
-                    Email:{' '}
+                    Email:
                     <a href="mailto:felixanufanny@gmail.com" className="hover:line-through">
                         felixanufanny@gmail.com
                     </a>
                 </p>
                 <p className="contact-p">
-                    Instant Messaging:{' '}
+                    Instant Messaging:
                     <a href="https://wa.me/2348068766636" className="hover:line-through">
                         WhatsApp
-                    </a>{' '}
-                    /{' '}
+                    </a>
+                    /
                     <a href="https://t.me/oversabi_parrot" className="hover:line-through">
                         Telegram
-                    </a>{' '}
+                    </a>
                 </p>
             </div>
         </motion.div>

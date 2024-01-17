@@ -10,8 +10,8 @@ export const ThemeContext = createContext(null)
 
 function App() {
     const [theme, setTheme] = useState(() => {
-        const storedColor = localStorage.getItem('theme')
-        return storedColor || 'light'
+        const storedTheme = localStorage.getItem('theme')
+        return storedTheme || 'light'
     })
 
     const toggleTheme = () => {
