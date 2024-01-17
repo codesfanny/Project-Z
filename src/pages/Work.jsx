@@ -1,16 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { HiHome } from 'react-icons/hi2'
+import { motion } from 'framer-motion'
 
 export default function Work() {
     return (
-        <div className="">
+        <motion.div
+            className="icon"
+            initial={{ width: 0 }}
+            animate={{ width: '100%' }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}>
             <div className="flex flex-row mt-[5%] justify-between">
-                <div className="max-h-[80%] max-w-[40%] flex flex-col justify-between">
+                <div className="allwork max-h-[80%] max-w-[40%] flex flex-col justify-between">
                     <div>
                         <p className="header">Work</p>
                     </div>
-                    <div className="text-sm space-y-4">
+                    <div className="work-text text-md space-y-4">
                         <p>
                             Outlined on the right are my list of works. No thousands of work but I have put everything
                             into the little so far and I am still moving.
@@ -22,34 +25,34 @@ export default function Work() {
                     </div>
                 </div>
 
-                <div className="space-y-8">
-                    <div>
+                <div className="portfolio lg:space-y-8 mt-[12%]">
+                    <div className="">
                         <a href="#">
                             <p className="work-header hover:line-through hover:decoration-2"> Project One </p>
-                            <p> - Front-end Development</p>
+                            <p className="portfolio-a"> - Front-end Development</p>
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <p className="work-header hover:line-through hover:decoration-2"> Project Two </p>
-                            <p> - UI/UX Designing</p>
+                            <p className="portfolio-a"> - UI/UX Designing</p>
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <p className="work-header hover:line-through hover:decoration-2"> Project Three </p>
-                            <p> - Front-end Development</p>
+                            <p className="portfolio-a"> - Front-end Development</p>
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <p className="work-header hover:line-through hover:decoration-2"> Project Four </p>
-                            <p> - Front-end Development</p>
+                            <p className="portfolio-a"> - Front-end Development</p>
                         </a>
                     </div>
                 </div>
                 <div className="clearAll"></div>
             </div>
-        </div>
+        </motion.div>
     )
 }

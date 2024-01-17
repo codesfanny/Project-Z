@@ -1,39 +1,42 @@
 import React from 'react'
 import { HiHome } from 'react-icons/hi2'
 import { Link } from 'react-router-dom'
+import { FaGithubSquare } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaInstagramSquare } from 'react-icons/fa'
 
 export default function Sidebar() {
     return (
-        <div className="">
-            <div className="w-60 p-3 h-screen flex flex-col">
-                <div className="pt-6 mb-[80%]">
+        <div className="mobile-sidebar">
+            <div className="tablet-sidebar w-60 p-3 h-screen flex flex-col">
+                <div className="pt-6 mb-[80%] icon">
                     <Link to="/">
-                        <HiHome fontSize={24} />
+                        <HiHome fontSize={24} className="hihome" />
                     </Link>
                 </div>
-                <div className="ml-[5%] mb-0 max-w-2 min-h-36 border-l border-l-gray-500"></div>
-                <div className=" pt-6">
-                    <div className="space-y-4 ">
-                        <div className="h-5 w-5">
+                <div className="bar ml-[5%] mb-0 max-w-2 min-h-36 border-l border-l-gray-500"></div>
+                <div className="icon pt-6">
+                    <div className="space-y-4 flex flex-col justify-items-center align-middle">
+                        <div>
                             <a href="https://github.com/codesfanny">
-                                <img src="../images/github.png" alt="" />
+                                <FaGithubSquare fontSize={22} className="github" />
                             </a>
                         </div>
-                        <div className="h-5 w-5">
+                        <div className="">
                             <a href="https://www.instagram.com/funmilaanu/">
-                                <img src="../images/instagram.png" alt="" />
+                                <FaInstagramSquare fontSize={22} className="instagram" />
                             </a>
                         </div>
-                        <div className="h-5 w-5">
+                        <div className="">
                             <a href="https://www.linkedin.com/in/felix-fanny-289b4755/">
-                                <img src="../images/linkedin.png" alt="" />
+                                <FaLinkedin fontSize={22} className="linkedin" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className="relative mt-[20%] -ml-[8%]">
+                <div className="copyright relative mt-[20%] -ml-[8%]">
                     <div className="absolute semi-header">
-                        <p className="-rotate-90"> &copy; 2024 </p>
+                        <p className="-rotate-90 icon copyright"> &copy; 2024 </p>
                     </div>
                 </div>
 
