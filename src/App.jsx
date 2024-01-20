@@ -27,17 +27,17 @@ function App() {
             <div id={theme}>
                 <div className="switcher">
                     {theme === 'light' ? (
-                        <span className="text-xs cursor-default">
+                        <span onClick={toggleTheme} className="text-xs cursor-pointer">
                             Dark Mode{' '}
                             <div className="inline float-end pl-2 pt-1 cursor-pointer">
-                                <HiMoon fontSize={18} onClick={toggleTheme} />
+                                <HiMoon fontSize={18} />
                             </div>
                         </span>
                     ) : (
-                        <span className="text-[#a5a5a5] text-xs cursor-default">
+                        <span onClick={toggleTheme} className="text-[#a5a5a5] text-xs cursor-pointer">
                             Light Mode{' '}
                             <div className="inline float-end pl-2 pt-1 cursor-pointer">
-                                <HiSun color="white" fontSize={20} onClick={toggleTheme} />
+                                <HiSun color="white" fontSize={20} />
                             </div>
                         </span>
                     )}

@@ -33,10 +33,7 @@ export default function Main() {
                     <div className="space-y-[10%] icon">
                         <p className="main-h xl:text-xl uppercase tracking-widest font-semibold"> Felix Fanny</p>
                         <p className="main-p">Front-end Web Developer, UI/UX Designer, Graphics Designer</p>
-                        <p className="main-p">
-                            Currently working full-time as a Web Developer at{' '}
-                            <button className="hover:line-through hover:decoration-1">Skyttechnology</button>{' '}
-                        </p>
+                        <p className="main-p">Currently working full-time as a Web Developer at Skyttechnology</p>
                     </div>
                 </div>
                 <div>
